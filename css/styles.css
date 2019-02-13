@@ -275,6 +275,7 @@ nav h1 a {
   position: relative;
   width: 90%;
   padding:2px;
+  border-radius:12px 0 12px 0;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -283,7 +284,19 @@ nav h1 a {
   color: #666;
 }
 
+#reviews-list li p:first-child {
+  background-color: #444444;
+  color: white;
+  padding:4px;
+}
 
+
+#reviews-list li p:nth-child(3) {
+  background: orange;
+  width:80px;
+  padding:4px;
+  text-transform: uppercase;
+}
 
 @media screen and (min-width: 450px) {
   .filter-options select
