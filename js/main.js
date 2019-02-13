@@ -152,6 +152,8 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
   addMarkersToMap();
 }
 
+tabIndexCounter=3; // there are 2 select items, so tabindex starts from 3.
+
 /**
  * Create restaurant HTML.
  */
@@ -179,6 +181,9 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
+
+  more.setAttribute("tabIndex",tabIndexCounter);
+  tabIndexCounter++;
 
   return li
 }
