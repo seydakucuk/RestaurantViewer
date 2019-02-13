@@ -38,8 +38,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-  display:flex;
-  flex-wrap: wrap;
 }
 #footer {
   background-color: #444;
@@ -288,6 +286,7 @@ nav h1 a {
   background-color: #444444;
   color: white;
   padding:4px;
+  border-radius: 12px 0 12px 0;
 }
 
 
@@ -307,6 +306,12 @@ nav h1 a {
   {
     font-size:14px
   }
+}
+
+.inside #main-content
+{
+  display:flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1000px) {
