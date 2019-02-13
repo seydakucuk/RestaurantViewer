@@ -281,13 +281,24 @@ nav h1 a {
   {
     width:200px;
   }
+  #restaurants-list li h1
+  {
+    font-size:14px
+  }
 }
 
 @media screen and (min-width: 1000px) {
   #restaurants-list
   {
     padding-left:10%;
-    padding-right:50%;
+    padding-right:10%;
+  }
+
+  @media screen and (min-width: 320px) and (max-width:449px) {
+    #restaurants-list li h1
+    {
+      font-size:8px
+    }
   }
   
 }
