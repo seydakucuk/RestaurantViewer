@@ -305,24 +305,20 @@ nav h1 a {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width:200px) and (max-width:500px) {
+@media only screen and (max-width: 499px)
+{
+
   #restaurants-list li h1
   {
     font-size:8px
   }
 
-  
 #restaurants-list
 {
   display:flex;
   flex-wrap:nowrap;
   flex-direction: column;
 }
-
-}
-
-@media screen and  (min-width:501px) and (max-width:999px){
-
   .inside #map-container
     {
       width:100%;
@@ -335,7 +331,37 @@ nav h1 a {
     #restaurant-container, #reviews-container
     {
       width:100%;
+      padding:0;
     }
+
+    .inside header {
+      position:relative;
+    }
+
+    .inside #footer {
+      width:100%;
+    }
+
+    #breadcrumb
+    {
+      width: calc(100% - 80px);
+    }
+
+}
+
+@media screen and  (min-width:500px) and (max-width:999px){
+
+
+  .inside #map-container
+    {
+      width:100%;
+      position: relative;
+      top:0px;
+      left:0px;
+      height:300px;
+    }
+
+  
 
     .inside header {
       position:relative;
