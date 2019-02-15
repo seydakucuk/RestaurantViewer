@@ -307,7 +307,6 @@ nav h1 a {
 
 @media only screen and (max-width: 499px)
 {
-
   #restaurants-list li h1
   {
     font-size:8px
@@ -351,6 +350,11 @@ nav h1 a {
 
 @media screen and  (min-width:500px) and (max-width:999px){
 
+  #restaurant-container, #reviews-container
+    {
+      width:100%;
+      padding:0;
+    }
 
   .inside #map-container
     {
@@ -360,8 +364,6 @@ nav h1 a {
       left:0px;
       height:300px;
     }
-
-  
 
     .inside header {
       position:relative;
