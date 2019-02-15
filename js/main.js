@@ -160,7 +160,7 @@ tabIndexCounter=3; // there are 2 select items, so tabindex starts from 3.
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
