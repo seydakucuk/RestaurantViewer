@@ -7,7 +7,7 @@ self.addEventListener('install', function (event) {
         caches.open(staticCacheName).then(function (cache) {
             return cache.addAll([
                 '/',
-              /*  'index.html',
+                'index.html',
                 'restaurant.html',
                 'css/styles.css',
                 'js/dbhelper.js',
@@ -22,7 +22,7 @@ self.addEventListener('install', function (event) {
                 'img/6.jpg',
                 'img/7.jpg',
                 'img/8.jpg',
-                'img/9.jpg',*/
+                'img/9.jpg',
                 'img/10.jpg'
             ]);
         })
